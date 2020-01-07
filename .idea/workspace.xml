@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78680ab9-708d-4278-aeea-22ddebd37c7c" name="Default Changelist" comment="">
+    <list default="true" id="78680ab9-708d-4278-aeea-22ddebd37c7c" name="Default Changelist" comment="0003">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/Bai1/aaaa.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +12,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Module1/Bai1/Chuyendoitiente/Untitled.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,14 +82,14 @@
               <item name="Codegym" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="D:\Codegym" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="Module1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="B1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Bai1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Codegym" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="D:\Codegym" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="Module1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="B1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="chuyển đổi tiền tệ" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Bai1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Chuyendoitiente" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -101,7 +108,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Angular2Html" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Module1/Bai1/aaaa.txt" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -142,6 +149,8 @@
       <workItem from="1578303555338" duration="320000" />
       <workItem from="1578305036932" duration="297000" />
       <workItem from="1578385181180" duration="1081000" />
+      <workItem from="1578390081856" duration="663000" />
+      <workItem from="1578398042463" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="222">
       <created>1578305080675</created>
@@ -150,11 +159,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578305080675</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="0002">
+      <created>1578390142933</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578390142933</updated>
+    </task>
+    <task id="LOCAL-00003" summary="0003">
+      <created>1578390691532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578390691532</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1698000" />
+    <option name="totallyTimeSpent" value="2995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
@@ -173,6 +196,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -183,7 +207,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="222" />
-    <option name="LAST_COMMIT_MESSAGE" value="222" />
+    <MESSAGE value="0002" />
+    <MESSAGE value="0003" />
+    <option name="LAST_COMMIT_MESSAGE" value="0003" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1578287337860">
@@ -198,12 +224,11 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
-    <entry file="file://$PROJECT_DIR$/Module1/B1/abc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Module1/B1/abc.html" />
+    <entry file="file://$PROJECT_DIR$/Module1/Bai1/Chuyendoitiente/chuyendoitiente.html" />
+    <entry file="file://$PROJECT_DIR$/Module1/Bai1/aaaa.txt" />
+    <entry file="file://$PROJECT_DIR$/Module1/Bai1/Chuyendoitiente/Untitled.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
