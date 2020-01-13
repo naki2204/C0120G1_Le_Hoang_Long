@@ -7,7 +7,7 @@
 <body>
 <script>
     var name=prompt("indicate your fullname ", '');
-    var idnumber=prompt("indicate your idnumber ", '');
+    var idcard=prompt("indicate your idcard ", '');
     var birthday=prompt("indicate your date of birth ", '');
     var address=prompt("indicate your address ", '');
     var email=prompt("indicate your email ", '');
@@ -17,6 +17,38 @@
     var rentDays=prompt("indicate the number of days rented ", '');
     var service=prompt("indicate the type of service ", 'Villa,House,Room');
     var rentRoom=prompt("indicate the type of room rented ", 'Vip,Business,Normal');
+    var payable_amount;
+    var x;
+    var y;
+    var z;
+    y=parseFloat(rentDays);
+    z=parseFloat(discount);
+    if (service === "villa") {
+        x = 500;
+    } else {
+        if (service === "house") {
+            x = 300;
+        } else {
+            if (service === "room") {
+                x = 100;
+            }
+        }
+    }
+    payable_amount=x*y*(1-z/100);
+    alert(
+        "your fullname: "+ name+
+        "\nyour idcard: "+ idcard+
+        "\nyour date of birth: "+ birthday+
+        "\nyour address: "+ address+
+        "\nyour email: "+ email+
+        "\nyour customer: "+ customer+
+        "\ndiscount: "+ discount+
+        "\nnumber: "+ number+
+        "\nservice: "+ service+
+        "\nrentRoom: "+ rentRoom+
+        "\nrentDays: "+ rentDays+
+        "\npayable_amount: "+payable_amount);
+
 
 </script>
 </body>
