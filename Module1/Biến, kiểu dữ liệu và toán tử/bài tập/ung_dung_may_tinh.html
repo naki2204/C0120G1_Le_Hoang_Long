@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <input id = "a">
+    <input id = "b"> <br><br>
+
+    <button type= "button" onclick ="addition()"> Addition(+) </button>
+    <button type= "button" onclick ="subtraction()"> Subtraction(-) </button>
+    <button type= "button" onclick ="multiplication()"> Multiplication(X) </button>
+    <button type= "button" onclick ="divition()"> Divition(/) </button>
+    <br>
+    <br>
+    <br>
+    <p id="ketqua"></p>
+
+
+</form>
+<script>
+    function addition() {
+        var x;
+        var y;
+        var a;
+        x = parseFloat(document.getElementById("a").value);
+        y = parseFloat(document.getElementById("b").value);
+        a = x + y;
+        document.getElementById("ketqua").innerHTML = "x+y= " +   a;
+    }
+    function subtraction() {
+        var x;
+        var y;
+        var a;
+        x = parseFloat(document.getElementById("a").value);
+        y = parseFloat(document.getElementById("b").value);
+        a = x - y;
+        document.getElementById("ketqua").innerHTML = "x-y= " +   a;
+    }
+    function multiplication() {
+        var x;
+        var y;
+        var a;
+        x = parseFloat(document.getElementById("a").value);
+        y = parseFloat(document.getElementById("b").value);
+        a = x * y;
+        document.getElementById("ketqua").innerHTML = "x*y= " +   a;
+    }
+    function divition() {
+        var x;
+        var y;
+        var a;
+        x = parseFloat(document.getElementById("a").value);
+        y = parseFloat(document.getElementById("b").value);
+        a = x / y;
+        document.getElementById("ketqua").innerHTML = "x/y= " +   a;
+    }
+</script>
+</body>
+</html>
