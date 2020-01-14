@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var name="Lê Hoàng Long";
+        var idcard="221242";
+        var birthday="22/04/1995";
+        var address="Quãng Nam";
+        var email="naruto@gmail.com";
+        var customer="Diamond";
+        var discount=10;
+        var number=3;
+        var rentDays=10;
+        var service="Villa";
+        var rentRoom="Business";
+        var payable_amount=500*rentDays*(1-discount/100);
+        let choose=prompt(
+            "1.Show Information Customer.\n"+
+            "2.Edit Information Customer. \n"+
+            "3.Show the amount to be paid after discount"
+        );
+        switch (choose) {
+            case "1":
+                alert(
+                    "Information of Customer"+
+                    "\nyour fullname: "+ name+
+                    "\nyour idcard: "+ idcard+
+                    "\nyour date of birth: "+ birthday+
+                    "\nyour address: "+ address+
+                    "\nyour email: "+ email+
+                    "\nyour customer: "+ customer+
+                    "\ndiscount: "+ discount+
+                    "\nnumber: "+ number+
+                    "\nservice: "+ service+
+                    "\nrentRoom: "+ rentRoom+
+                    "\nrentDays: "+ rentDays
+            );
+            break;
+            case "2":
+                let chooseEdit=prompt(
+                    "Choose Information Customer You Want Edit:\n "+
+                    "\n1.your fullname: "+ name+
+                    "\n2.your idcard: "+ idcard+
+                    "\n3.your date of birth: "+ birthday+
+                    "\n4.your address: "+ address+
+                    "\n5.your email: "+ email+
+                    "\n6.your customer: "+ customer+
+                    "\n7.discount: "+ discount+
+                    "\n8.number: "+ number+
+                    "\n9.service: "+ service+
+                    "\n10.rentRoom: "+ rentRoom+
+                    "\n11.rentDays: "+ rentDays
+                );
+                switch (chooseEdit) {
+                    case "1":
+                        name=prompt("indicate your fullname ", '');
+                        break;
+                    case "2":
+                        idcard=prompt("indicate your idcard ", '');
+                        break;
+                    case "3":
+                        birthday=prompt("indicate your date of birth ", '');
+                        break;
+                    case "4":
+                        address=prompt("indicate your address ", '');
+                        break;
+                    case "5":
+                        email=prompt("indicate your email ", '');
+                        break;
+                    case "6":
+                        customer=prompt("indicate your customer ", 'Diamond,Platinum,Gold,Sliver,Member');
+                        break;
+                    case "7":
+                        discount=prompt("discount ", '');
+                        break;
+                    case "8":
+                        number=prompt("indicate number ", '');
+                        break;
+                    case "9":
+                        rentDays=prompt("indicate the number of days rented ", '');
+                        break;
+                    case "10":
+                        service=prompt("indicate the type of service ", 'Villa,House,Room');
+                        break;
+                    case "11":
+                        rentRoom=prompt("indicate the type of room rented ", 'Vip,Business,Normal');
+                        break;
+                    default:
+                        alert("Fail!!!!!")
+                        break;
+
+
+                }
+                alert(
+                    "Information of Customer"+
+                    "\nyour fullname: "+ name+
+                    "\nyour idcard: "+ idcard+
+                    "\nyour date of birth: "+ birthday+
+                    "\nyour address: "+ address+
+                    "\nyour email: "+ email+
+                    "\nyour customer: "+ customer+
+                    "\ndiscount: "+ discount+
+                    "\nnumber: "+ number+
+                    "\nservice: "+ service+
+                    "\nrentRoom: "+ rentRoom+
+                    "\nrentDays: "+ rentDays
+                );
+
+
+
+        }
+
+    </script>
+</body>
+</html>
