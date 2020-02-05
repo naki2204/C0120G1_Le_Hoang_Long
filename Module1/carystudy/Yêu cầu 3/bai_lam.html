@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var nameCustomer;
+        var nameStd= " ";
+        var idCard;
+        var birthdayCustomer;
+        var emailCustomer;
+        var discount;
+        var numberOfAccompanying;
+        var rentDays;
+        var checkValidate = false;
+
+
+        nameCustomer= prompt("indicate your fullname ", '');
+        nameCustomer = nameCustomer.trim().toLocaleLowerCase();
+        for (let i = 0; i < nameCustomer.length; i++) {
+            if (nameCustomer.charAt(i) === " " && nameCustomer.charAt(i + 1) === " ") {
+                continue;
+            }
+            if (i === 0 || nameCustomer.charAt(i - 1) === " ") {
+                nameStd += nameCustomer.charAt(i).toLocaleUpperCase();
+                continue;
+            }
+            nameStd += nameCustomer.charAt(i);
+        }
+        nameCustomer = nameStd;
+
+        do {
+            checkValidate = false;
+            idCard = prompt("Enter Id Card Customer: "); //CMND
+            if (isNaN(idCard)) {
+                alert("Khong Hop Le");
+                continue;
+            }
+            idCard = Number.parseFloat(idCard);
+            if (!Number.isInteger(idCard)) {
+                alert("khong hop le");
+                continue;
+            }
+            if (idCard >= 100000000 && idCard <= 999999999) {
+                checkValidate = true;
+            } else {
+                alert("khong hop le,vui long nhap lai");
+            }
+        } while (!checkValidate);
+
+        do {
+            checkValidate = false;
+            birthdayCustomer = prompt("Enter Birthday Customer (dd/MM/YYYY): "); //Ngaysinh
+            if (birthdayCustomer.charAt(2) != "/" || birthdayCustomer.charAt(5) != "/") {
+                alert("Khong Hop Le");
+                continue;
+            }
+            let day = birthdayCustomer.substring(0, 2);
+            let month = birthdayCustomer.substring(3, 5);
+            let year = birthdayCustomer.substring(6, 10);
+            if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
+                day = Number.parseFloat(day);
+                month = Number.parseFloat(month);
+                year = Number.parseFloat(year);
+                if (Number.isInteger(day) && Number.isInteger(year) && Number.isInteger(month)) {
+                    if (day > 0 && day < 32 && month > 0 && month < 13 && year > 1909 && year < 2020) {
+                        checkValidate = true;
+                    }
+                }
+            }
+            if (!checkValidate) {
+                alert("khong hop le, vui long nhap lai");
+            }
+        } while (!checkValidate);
+
+        do {
+            checkValidate = true;
+            emailCustomer = prompt("Enter Email Customer: "); //Email
+            let countDoc = 0;
+            let countAt = 0;
+            for (let i = 0; i < emailCustomer.length; i++) {
+                if (emailCustomer.charAt(i) === "@") {
+                    countAt++;
+                }
+                if (emailCustomer.charAt(i) === ".") {
+                    countDoc++;
+                }
+            }
+            if (countAt != 1 || countDoc < 1) {
+                checkValidate = false;
+                alert("Email khong hop le! Please try again");
+            }
+        } while (!checkValidate);
+
+        do {
+            checkValidate = false;
+            discount = prompt("Enter Discount: "); //giam gia
+            if (!isNaN(discount)) {
+                discount = Number.parseFloat(discount);
+                if (discount >= 0) {
+                    checkValidate = true;
+                }
+            }
+            if (!checkValidate) {
+                alert("Khong hop le,vui long nhap lai");
+            }
+        }
+        while (!checkValidate);
+
+        do {
+            checkValidate = false;
+            numberOfAccompanying = prompt("Enter Number of Accompanying: "); //so luong nguoi di kem
+            if (!isNaN(numberOfAccompanying)) {
+                numberOfAccompanying = Number.parseFloat(numberOfAccompanying);
+                if (numberOfAccompanying >= 0 && Number.isInteger(numberOfAccompanying)) {
+                    checkValidate = true;
+                }
+            }
+            if (!checkValidate) {
+                alert("khong hop le,vui long nhap lai");
+            }
+        }
+        while (!checkValidate);
+
+        do {
+            checkValidate = false;
+            rentDays = prompt("Enter Rent Days: "); //so ngay thue
+            if (!isNaN(rentDays)) {
+                rentDays = Number.parseFloat(rentDays);
+                if (rentDays > 0 && Number.isInteger(rentDays)) {
+                    checkValidate = true;
+                }
+            }
+            if (!checkValidate) {
+                alert("khong hop le,vui long nhap lai");
+            }
+        }
+        while (!checkValidate);
+
+        alert(
+            "Name Customer: "+ nameCustomer+
+            "\nIdCard: "+ idCard+
+            "\nBirthdayCustomer: "+ birthdayCustomer+
+            "\nEmail Customer: "+ emailCustomer+
+            "\nDiscount: "+ discount+
+            "\nNumber Of Accompanying: "+ numberOfAccompanying+
+            "\nRentDays: "+ rentDays);
+
+    </script>
+</body>
+</html>

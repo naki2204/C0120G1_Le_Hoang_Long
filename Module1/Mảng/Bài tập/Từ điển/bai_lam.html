@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển</title>
+</head>
+<body>
+<input id="tuCanTim" >
+<button type="button" onclick="tim_kiem();">tra</button>
+<script>
+    let tudien=[
+        ["good","high","love","day"],["tot","cao","yeu","ngay"]
+    ];
+    let x;
+    let check=false;
+    function tim_kiem() {
+        x=document.getElementById("tuCanTim").value;
+        for(var i=0;i<tudien[0].length;i++){
+            if(x===tudien[0][i]) {
+                document.write(tudien[1][i]);
+                check=true;
+            }
+        }
+        if(!check) {
+            alert("Ko tim thay")
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
