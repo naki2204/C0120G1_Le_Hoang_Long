@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<select id="123">
+    <option value="meter">Meter</option>
+    <option value="foot">Foot</option>
+</select>
+<select id="abc">
+    <option value="foot">Foot</option>
+    <option value="meter">Meter</option>
+</select>
+<button type="button" onclick="chuyenDoiVaHienThi()">Chuyển đổi</button>
+<p id="kq"></p>
+<script>
+    function footToMeter(a) {
+        var meter;
+        meter =a*0.305;
+        return meter;
+
+    }
+    function meterToFoot(b) {
+        var foot;
+        foot=b*3.279;
+        return foot;
+    }
+
+    function chuyenDoiVaHienThi() {
+        var x = document.getElementById("123").value;
+        var y = document.getElementById("abc").value;
+        var kq;
+        if (x === "meter" && y === "meter") {
+            kq = parseFloat(document.getElementById("nhap").value);
+            document.getElementById("kq").innerHTML=kq;
+        }
+        if (x === "foot" && y === "foot") {
+            kq = parseFloat(document.getElementById("nhap").value);
+            document.getElementById("kq").innerHTML = kq;
+        }
+        if (x === "foot" && y === "meter") {
+            kq = footToMeter(parseFloat(document.getElementById("nhap").value));
+            document.getElementById("kq").innerHTML="kq";
+        }
+        if (x === "meter" && y === "foot") {
+            kq = meterToFoot(parseFloat(document.getElementById("nhap").value));
+            document.getElementById("kq").innerHTML = kq;
+        }
+    }
+</script>
+</body>
+</html>

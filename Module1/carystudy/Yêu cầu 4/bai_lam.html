@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu Cầu 4</title>
+</head>
+<body>
+
+<script>
+    let arrNameCustomers=[];
+    let choose=prompt("1. Add new customer."+
+        "\n2.Delete customer.");
+    let result="";
+    switch (choose) {
+        case "1":
+            let arrlength =prompt("Indicate the number of the name's customer you want to add:");
+            for(var i=0;i<arrlength;i++){
+                arrNameCustomers.push(prompt("Indicate the name's customer you want to add: "))
+            }
+            arrNameCustomers.sort();
+            result="";
+            for(var j=0;j<arrNameCustomers.length;j++){
+                result +="\n"+(j+1)+". "+ arrNameCustomers[j];
+            }
+            alert(result);
+            break;
+        case "2":
+            arrNameCustomers[0]="Ha";
+            arrNameCustomers[1]="Minh";
+            arrNameCustomers[2]="Nam";
+            arrNameCustomers[3]="Long";
+            arrNameCustomers[4]="Hoa";
+            arrNameCustomers[5]="Cuong";
+            arrNameCustomers[6]="Tho";
+            arrNameCustomers[7]="Truong";
+            arrNameCustomers[8]="Thai";
+            arrNameCustomers[9]="Binh";
+            arrNameCustomers.sort();
+            result="";
+            for(var x=0;x<arrNameCustomers.length;x++){
+                result +="\n"+(x+1)+". "+ arrNameCustomers[x];
+            }
+            let indexDelete = prompt("choose customer you want to delete: " + result);
+            arrNameCustomers.splice(Number.parseInt(indexDelete)-1,1);
+            var resultAfterDelete="";
+            for(var n=0;n<arrNameCustomers.length;n++){
+                resultAfterDelete +="\n"+(n+1)+". "+ arrNameCustomers[n];
+            }
+            alert("List customer: "+resultAfterDelete);
+
+
+
+            break;
+        default:
+            alert("fail!!!");
+            break;
+
+    }
+
+
+</script>
+</body>
+</html>

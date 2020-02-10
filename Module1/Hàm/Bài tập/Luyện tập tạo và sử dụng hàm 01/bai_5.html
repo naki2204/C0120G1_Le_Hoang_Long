@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let star1=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe" ,"Regulus"];
+        let star2= new Array("Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo");
+        function timSao() {
+            let x=prompt("nhap ten mot ngoi sao tren troi bat ky",'');
+            for(i=0;i<star1.length;i++){
+                if(x=== star1[i]){
+                    alert(star2[i]);
+                    return star2[i]
+                }
+            }
+            alert("khong tim thay");
+        }
+        let y=timSao();
+
+    </script>
+</body>
+</html>

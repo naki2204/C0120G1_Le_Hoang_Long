@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-form action="">
+<form>
 <input type="text" id="nhap">
 <select id="abc">
     <option value="vn">Việt Nam</option>
@@ -28,19 +28,19 @@ form action="">
         x=document.getElementById("abc").value;
         y=document.getElementById("123").value;
 
-        if(x=="usd" && y=="vn"){
+        if(x==="usd" && y==="vn"){
             a=parseFloat(document.getElementById("nhap").value)*23000;
             document.getElementById("kq").innerHTML = a;
         }
-        if(x=="usd" && y=="usd"){
+        if(x==="usd" && y==="usd"){
             a=parseFloat(document.getElementById("nhap").value);
             document.getElementById("kq").innerHTML = a;
         }
-        if(x=="vn"&& y=="usd"){
+        if(x==="vn"&& y==="usd"){
             a=parseFloat(document.getElementById("nhap").value)/23000;
             document.getElementById("kq").innerHTML = a;
         }
-        if(x=="vn"&& y=="vn"){
+        if(x==="vn"&& y==="vn"){
             a=parseFloat(document.getElementById("nhap").value);
             document.getElementById("kq").innerHTML = a;
         }

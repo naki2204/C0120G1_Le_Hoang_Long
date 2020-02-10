@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var numberNguyenTo=parseInt(prompt("nhập số lượng số nguyên tố đầu tiên cần biết ", ''));
+    function hienThiSoNguyenTo(a) {
+        var count=0;
+        var number =2;
+        while(count < a){
+            if(xacDinhSoNguyenTo(number)){
+                document.write(number +'    ');
+                count++;
+            }
+            number++;
+        }
+    }
+
+
+    function xacDinhSoNguyenTo(n) {
+
+        if (n === 2) {
+            return true;
+        }
+        if (n > 2) {
+            if (n % 2 === 0) {
+                return false;
+            } else {
+                for (let i = 3; i < n - 1; i = i + 2) {
+                    if (n % i === 0) {
+                        kq = +n + " không phải là số nguyên tố";
+                        return false;
+                    }
+                    return true;
+                }
+
+            }
+
+        }
+        return true ;
+    }
+    let x=hienThiSoNguyenTo(numberNguyenTo);
+</script>
+
+</body>
+</html>
