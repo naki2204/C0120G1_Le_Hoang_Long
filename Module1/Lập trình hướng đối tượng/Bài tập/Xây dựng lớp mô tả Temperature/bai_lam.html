@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        Temperature=function (celcius) {
+            this.celcius=celcius;
+            this.getCelcius=function () {
+                return this.celcius;
+            };
+            this.getConvertToKenvin=function () {
+                return (this.celcius+273);
+
+            };
+            this.getConvertToFahrenheit=function () {
+                return (this.celcius*1.8+32);
+            }
+            this.setCelcius=function (celcius) {
+                this.celcius=celcius;
+            }
+
+
+        };
+        let temperature=new Temperature(60);
+        alert("60 độ C bằng: "+temperature.getConvertToKenvin()+" độ Kenvin"+
+        "\n         "+temperature.getConvertToFahrenheit()+" độ F");
+    </script>
+</body>
+</html>
