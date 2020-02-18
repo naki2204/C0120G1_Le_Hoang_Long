@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let validateClass = /^[ACP][0-9]{4}[GHIKLM]$/;
+        function checkNameClass(arc) {
+            if(validateClass.test(arc)){
+                return true;
+            }
+            return false;
+        }
+        let class1 = "C0318G";
+        let class2 = "P0323A";
+        let class3 = "M0318G";
+        console.log(checkNameClass(class1));
+        console.log(checkNameClass(class2));
+        console.log(checkNameClass(class3));
+
+
+
+
+    </script>
+</body>
+</html>

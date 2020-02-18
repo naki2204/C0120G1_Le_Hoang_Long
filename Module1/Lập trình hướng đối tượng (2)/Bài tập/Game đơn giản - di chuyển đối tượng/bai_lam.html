@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+<div id="game"></div>
+<script>
+    src = "script.js";
+
+    let Hero = function (image, top, left, size, sleep) {
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+        this.sleep = sleep;
+
+        this.getImage = function () {
+            return this.image;
+        };
+        this.getTop = function () {
+            return this.top;
+        };
+        this.getLeft = function () {
+            return this.left;
+        };
+        this.getSize = function () {
+            return this.size;
+        };
+        this.getSleep = function () {
+            return this.sleep;
+        };
+
+        this.getHeroElement = function () {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
+        };//position:absolute ảnh được so với cả khung hình, cách đường trên khung hình 1 khoảng top
+        //cách dường bên phải khung hình 1 khoảng left
+
+        this.moveRight = function () {
+            this.left += 10;
+            console.log('ok: ' + this.left);
+        };
+        this.moveTop = function () {
+            this.top -= 10;
+            console.log('ok: ' + this.top);
+
+        };
+        this.moveLeft = function () {
+            this.left -= 10;
+        };
+        this.moveBot = function () {
+            this.top += 10;
+        }
+
+    };
+    let hero = new Hero('https://i.pinimg.com/originals/84/93/d5/8493d5aa8bddfb3736250c40fca9dacc.jpg', 35, 0, 200, 10);
+
+    function start1() {
+        if (hero.getLeft() < window.innerWidth - hero.size - 50) {
+            hero.moveRight();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+
+    }
+
+    function start2() {
+        if (hero.left > 10) {
+            hero.moveLeft();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+
+    }
+
+    function start3() {
+        if (hero.top > 35) {
+            hero.moveTop();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+
+    }
+
+    function start4() {
+        if (hero.top < window.innerHeight - hero.size) {
+            hero.moveBot();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+    }
+
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                start2();
+                break;
+            case 39:
+                start1();
+                break;
+            case 38:
+               start3();
+                break;
+            case 40:
+                start4();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>

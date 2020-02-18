@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        Apple = function () {
+            this.weight = 10;
+            this.getWeight = function () {
+                return this.weight;
+            };
+            this.decrease = function () {
+                if (this.weight > 0) {
+                    this.weight--;
+                }
+            };
+            this.isEmpty = function () {
+                if (this.weight === 0) {
+                    alert("ăn hết rồi");
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            };
+
+        };
+        Human = function (name,gender,weight) {
+            this.name= name;
+            this.gender= gender;
+            this.weight=weight;
+            this.getName = function () {
+                return this.name;
+            };
+            this.setName = function (name) {
+                this.name = name;
+            };
+            this.getGender = function () {
+                return this.gender ;
+            };
+            this.setGender = function (gender) {
+                this.gender =gender;
+            };
+            this.isMale = function () {
+                if (this.gender === "male") {
+                    return true;
+                } else {
+                    return false;
+                }
+            };
+            this.getWeight = function () {
+                return this.weight;
+            };
+            this.setWeight = function () {
+                this.weight = weight;
+            };
+            this.checkApple = function (apple) {
+                if(apple.isEmpty()){
+                    return true;
+                }else {
+                    return false;
+                }
+            };
+            this.eat = function (apple) {
+                if(this.checkApple(apple)){
+                    apple.decrease();
+                    this.weight++;
+                    alert(apple.getWeight());
+                }else {
+                    this.say();
+                }
+
+            };
+            this.say = function () {
+                alert("Hết táo rồi!!!!")
+
+            }
+
+        };
+        let apple1 = new Apple();
+        let adam = new Human("adam","nam",49);
+        adam.eat(apple1);
+
+
+    </script>
+</body>
+</html>

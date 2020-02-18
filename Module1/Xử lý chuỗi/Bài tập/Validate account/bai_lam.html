@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let validateAccount = /^[_a-z0-9]{6,}$/;
+        function checkAccount(arc) {
+            if(validateAccount.test(arc)){
+                document.write("\nbieu mau dung");
+                return true
+            }
+            document.write("\nbieu mau sai");
+            return false;
+        }
+        let text1 ="123abc_";
+        let text2 ="_abc123";
+        let text3 ="______";
+        let text4 ="abcde";
+        checkAccount(text1);
+        checkAccount(text2);
+        checkAccount(text3);
+        checkAccount(text4);
+
+    </script>
+</body>
+</html>
