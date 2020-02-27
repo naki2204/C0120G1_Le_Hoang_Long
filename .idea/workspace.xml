@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78680ab9-708d-4278-aeea-22ddebd37c7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module1/Lập trình hướng đối tượng/Bài tập/Xây dựng lớp mô tả Temperature/bai_lam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/Lập trình hướng đối tượng/Bài tập/Xây dựng lớp mô tả hình chữ nhật/bai_lam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/Lập trình hướng đối tượng/Thực hành/Funny circles/bai_lam1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/Lập trình hướng đối tượng/Thực hành/Xây dựng lớp Date/bai_lam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/Lập trình hướng đối tượng/Thực hành/Xây dựng lớp Hình Tròn/bai_lam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/carystudy/Yêu cầu 5/bai_lam.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/B1/Ngon_Ngu_Lap_Trinh_Java/ThucHanh/hien_thi_thoi_gian_cua_he_thong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/B1/Ngon_Ngu_Lap_Trinh_Java/ThucHanh/khai_bao_va_su_dung_bien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/B1/Ngon_Ngu_Lap_Trinh_Java/ThucHanh/tim_gia_tri_trong_mang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/B1/Ngon_Ngu_Lap_Trinh_Java/aa.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +44,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Angular2Html" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New folder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -114,7 +113,26 @@
       <workItem from="1581494930261" duration="18000" />
       <workItem from="1581494988358" duration="57000" />
       <workItem from="1581495098496" duration="32000" />
-      <workItem from="1581495132709" duration="2944000" />
+      <workItem from="1581495132709" duration="4210000" />
+      <workItem from="1581558374686" duration="3801000" />
+      <workItem from="1581576936974" duration="283000" />
+      <workItem from="1581577247437" duration="9631000" />
+      <workItem from="1581643353772" duration="5891000" />
+      <workItem from="1581662445237" duration="9476000" />
+      <workItem from="1581902358409" duration="12090000" />
+      <workItem from="1581921434841" duration="8127000" />
+      <workItem from="1581957057730" duration="3293000" />
+      <workItem from="1581990652314" duration="6114000" />
+      <workItem from="1582012324682" duration="3356000" />
+      <workItem from="1582121608549" duration="1901000" />
+      <workItem from="1582199377298" duration="6534000" />
+      <workItem from="1582248566427" duration="2928000" />
+      <workItem from="1582268296484" duration="750000" />
+      <workItem from="1582275445324" duration="1014000" />
+      <workItem from="1582276496864" duration="12000" />
+      <workItem from="1582530139034" duration="22000" />
+      <workItem from="1582531106798" duration="36000" />
+      <workItem from="1582531159289" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="222">
       <created>1578305080675</created>
@@ -186,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581317360774</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="22">
+      <created>1581498357344</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581498357344</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,21 +222,42 @@
     <MESSAGE value="0002" />
     <MESSAGE value="0003" />
     <MESSAGE value="004" />
-    <option name="LAST_COMMIT_MESSAGE" value="004" />
+    <MESSAGE value="22" />
+    <option name="LAST_COMMIT_MESSAGE" value="22" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="26" key="#Notifications" timestamp="1581495113061">
+    <state x="275" y="26" key="#Notifications" timestamp="1581558443660">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="26" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1581495113061" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1581495184197">
+    <state x="275" y="26" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1581558443660" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1582015752619">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1582015752619" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1582248641433">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578287337860" />
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1581495184197" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1582248641433" />
     <state x="186" y="10" key="SettingsEditor" timestamp="1581495045955">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="186" y="10" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1581495045955" />
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1582015769516">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1582015769516" />
+    <state x="384" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1582276501683">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="384" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1582276501683" />
+    <state x="372" y="138" key="git4idea.merge.GitPullDialog" timestamp="1581498393986">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="372" y="138" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1581498393986" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1582013042187">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1582013042187" />
   </component>
 </project>
